@@ -24,7 +24,7 @@ A simple web-based application for managing user data, including creating, readi
   - method-override for handling HTTP methods like PATCH and DELETE
   - uuid for generating unique user IDs
 ### Steps
-1. Clone the repository: (use Visual Studio Code) git clone
+1. Clone the repository: (use Visual Studio Code) git clone https://github.com/bhumibansal06/User-CRUD-Application.git
 2. Install dependencies: npm install
 3. Set up MySQL database:
    Create a database named users.
