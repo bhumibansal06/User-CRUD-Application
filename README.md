@@ -26,21 +26,21 @@ A simple web-based application for managing user data, including creating, readi
 ### Steps
 1. Clone the repository: (use Visual Studio Code) git clone https://github.com/bhumibansal06/User-CRUD-Application.git
 2. Install dependencies: npm install
-3. Set up MySQL database:
-   Create a database named users.
-   Run the following query to create the user_data table:
-   CREATE TABLE user_data (
-   id VARCHAR(255) PRIMARY KEY,
-   Name VARCHAR(255),
-   Email VARCHAR(255),
-   Password VARCHAR(255)
+3. Set up MySQL database: <br>
+   Create a database named users. <br>
+   Run the following query to create the user_data table: <br>
+   CREATE TABLE user_data ( <br>
+   id VARCHAR(255) PRIMARY KEY, <br>
+   Name VARCHAR(255), <br>
+   Email VARCHAR(255), <br>
+   Password VARCHAR(255) <br>
    );
-4. Update database credentials in index.js:
-   const connection = mysql.createConnection({
-   host: 'localhost',
-   user: 'root',
-   database: 'users',
-   password: 'your_mysql_password'
+4. Update database credentials in index.js: <br>
+   const connection = mysql.createConnection({ <br>
+   host: 'localhost', <br>
+   user: 'root', <br>
+   database: 'users', <br>
+   password: 'your_mysql_password' <br>
    });
 5. Start the server: nodemon index.js
 6. Open your browser and navigate to: http://localhost:8080
