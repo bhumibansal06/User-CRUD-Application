@@ -23,5 +23,27 @@ A simple web-based application for managing user data, including creating, readi
   - Faker.js for generating random user data
   - method-override for handling HTTP methods like PATCH and DELETE
   - uuid for generating unique user IDs
+### Steps
+1. Clone the repository: (use Visual Studio Code) git clone
+2. Install dependencies: npm install
+3. Set up MySQL database:
+   Create a database named users.
+   Run the following query to create the user_data table:
+   CREATE TABLE user_data (
+   id VARCHAR(255) PRIMARY KEY,
+   Name VARCHAR(255),
+   Email VARCHAR(255),
+   Password VARCHAR(255)
+   );
+4. Update database credentials in index.js:
+   const connection = mysql.createConnection({
+   host: 'localhost',
+   user: 'root',
+   database: 'users',
+   password: 'your_mysql_password'
+   });
+5. Start the server: nodemon index.js
+6. Open your browser and navigate to: http://localhost:8080
 
----
+
+
