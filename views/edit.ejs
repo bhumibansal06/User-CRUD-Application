@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <% if (error) { %>
+        <div style="color: red; border: 1px solid red; padding: 10px;">
+          <strong>Error:</strong> <%= error %>
+        </div>
+    <% } %>
+
+    <form action="/users/<%=user.id%>?_method=PATCH" method="post">
+        <textarea name="username"><%=user.Name%></textarea> <br>
+        <input type="password" name="password" placeholder="enter password">
+        <button>EDIT</button>
+    </form>
+</body>
+</html>

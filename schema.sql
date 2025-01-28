@@ -1,0 +1,12 @@
+CREATE DATABASE users;
+
+USE users;
+
+CREATE TABLE user_data (
+    id VARCHAR(50) PRIMARY KEY,
+    Name VARCHAR(50) UNIQUE,
+    Email VARCHAR(50) UNIQUE NOT NULL,
+    Password VARCHAR(50) NOT NULL
+);
+
+SHOW TABLES;

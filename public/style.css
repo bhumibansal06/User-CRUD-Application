@@ -1,0 +1,155 @@
+/* General Reset and Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif, Arial, sans-serif;
+    background: #f0f2f5; /* Very light gray-blue background (more subtle than white) */
+    color: #333; /* Dark text color for better readability */
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Headings */
+h1, h3 {
+    margin: 20px 0;
+    color: #333; /* Dark text color for headings */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+/* Forms */
+form {
+    background: rgba(255, 255, 255, 0.9); /* Light white background with slight transparency */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    max-width: 420px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+/* Form Elements */
+form input, form textarea, form button {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+    background: #fafafa; /* Very light gray background for inputs */
+    color: #333; /* Dark text color for form inputs */
+}
+
+/* Form Input Focus State */
+form input:focus, form textarea:focus, form button:focus {
+    outline: 2px solid #2980b9; /* Deep blue for focus */
+    background: #ffffff; /* White background on focus */
+}
+
+/* Buttons */
+form button, button {
+    background: #2980b9; /* Deep professional blue */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Hover State */
+form button:hover, button:hover {
+    background: #1c5980; /* Darker blue for hover */
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Active State */
+form button:active, button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Tables */
+table {
+    width: 85%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: #ffffff; /* White background for table */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    color: #333; /* Dark text color for table */
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+/* Table Cells and Headers */
+table th, table td {
+    padding: 18px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Light border color for table */
+}
+
+/* Table Header */
+table th {
+    background: #2980b9; /* Deep blue header */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Alternating Row Colors */
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Very light alternating row color */
+}
+
+/* Table Hover Effect */
+table tr:hover {
+    background: #e6f0f9; /* Slightly darker hover effect for rows */
+}
+
+/* Error and Success Messages */
+div.error {
+    background: #e74c3c;
+    color: white;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+div.success {
+    background: #27ae60;
+    color: white;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Links */
+a {
+    color: #2980b9; /* Deep blue for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Link Hover Effect */
+a:hover {
+    color: #1c5980; /* Darker blue for link hover */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
