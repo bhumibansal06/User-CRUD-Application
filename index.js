@@ -16,7 +16,7 @@ const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     database: 'users',
-    password: 'Bhumi 0611'
+    password: 'your_mysql_password'
 });
 
 // Function to generate random user data
