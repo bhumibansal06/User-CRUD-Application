@@ -28,13 +28,7 @@ A simple web-based application for managing user data, including creating, readi
 2. Install dependencies: npm install
 3. Set up MySQL database:
    Create a database named users.
-   Run the following query to create the user_data table:
-   CREATE TABLE user_data (
-   id VARCHAR(255) PRIMARY KEY,
-   Name VARCHAR(255),
-   Email VARCHAR(255),
-   Password VARCHAR(255)
-   );
+   Run the schema.sql file
 4. Update database credentials in index.js:
    const connection = mysql.createConnection({
    host: 'localhost',
